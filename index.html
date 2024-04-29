@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+	<!-- Fuente para toda la pagina -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Jacquard+12+Charted&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@200;400;600&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Fuente para el logo -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+12+Charted&display=swap" rel="stylesheet">
+
+    <!-- Iconos FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+	<title>PorfolioMichael</title>
+</head>
+<body>
+	<!-- SECCION Inicio -->
+	<section id="inicio">
+	<header>
+		<div class="container">
+		   <h1 class="logo">{MichaelRivas}</h1>
+		    <nav id="nav" class="">
+			<ul id="links">
+				<li><a href="#Inicio" class="seleccion" onclick="seleccionar(this)">Inicio</a></li>
+				<li><a href="#SobreMi" onclick="seleccionar(this)">Sobre Mi</a></li>
+				<li><a href="#Habilidades" onclick="seleccionar(this)">Habilidades</a></li>
+				<li><a href="#Servicios" onclick="seleccionar(this)">Servicios</a></li>
+			</ul>
+		    </nav>
+		    <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+	    </div>
+	</header>
+	<div class="contenidoInicio">
+	    	<p class="Bienvenida">BIENVENIDOS</p>
+	    	<h2>Soy Michael Rivas <span class="Info"> Tec.Ing de Software</span></h2>
+	    	<p class="Descripcion">
+	    		Desarrollador de software con experiencia en diseño, creacion y administracion de base de datos SQL, mantenimiento de usuarios, backups. Dominio en lenguaje de programacion C# y sistemas integrados. Experiencia en las herramientas y procedimientos de capaz autogestion, eficaz en proyectos independientes. Buenas habilidades de colaboracion dentro de un equipo productivo.
+	    	</p>
+	    	<a href="#" class="boton">Ir a Portafolio</a>
+	</div>	
+	</section>
+
+	<!-- SECCION S O B R E M I -->
+	<section id="SobreMi">
+		<div class="containerphotho">
+				<img src="img/MichaelR.jpg" alt="MichaelRivas">
+	    </div>
+		   <div class="containerSobreMi">
+		   	   <p class="SobreMiT">SOBRE MI</h3>
+		   	   	<h2 class="InfoNombre">
+		   	   		Hola Soy <span class="nombre"> Michael Rivas</span>
+		   	   	</h2>
+		   	   	<h3 class="Carrera">Tecnico en Ingenieria de Software</h3>
+		   	   	<p class="SobreMiD">
+		   	   		Soy Tecnico en ingieneria de software muy apasionado
+		   	   		al mundo de la programacion, manejo diferentes tecnologias 
+		   	   		para el desarrollo de aplicaciones web y de escritorio 
+		   	   		como tambien la administracion de base de datos la cual es mi favorita. 
+		   	   		soy una persona responsable y respetuosa ante todo.
+		   	   	</p>
+		   	   	<a href="CVMichaelRivas.pdf" download class="cv" target="_blank">Descargar CV</a>
+	    </div>
+	</section>
+	<section id="Habilidades">
+		<h3 class="Habili">HABILIDADES</h3>
+		<div class="grid">
+			<div class="containerH">
+				<div class="gri-item">
+					<img class="Imagen" src="img/html-5.png" alt="HTML 5">
+					<div class="overlay"><p>HTML 5</p></div>
+				</div>
+				<div class="gri-item">
+					<img class="Imagen" src="img/css-3.png" alt="CSS 3">
+					<div class="overlay"><p>CSS 3</p></div>
+				</div>
+				<div class="gri-item">
+					<img class="Imagen" src="img/js.png" alt="JavaScript">
+					<div class="overlay"><p>JavaScript</p></div>
+				</div>
+				<div class="gri-item">
+					<img class="Imagen" src="img/java.png" alt="Java">
+					<div class="overlay"><p>Java</p></div>
+				</div>
+				<div class="gri-item">
+					<img class="Imagen" src="img/php.png" alt="PHP">
+					<div class="overlay"><p>PHP</p></div>
+				</div>
+				<div class="gri-item">
+					<img class="Imagen" src="img/base-de-datos.png" alt="base de datos SQL">
+					<div class="overlay"><p>Base de Datos SQL</p></div>
+				</div>
+				<div class="gri-item">
+					<img class="Imagen" src="img/internet.png" alt=".NET">
+					<div class="overlay"><p>.NET</p></div>
+				</div>
+				<div class="gri-item">
+					<img class="Imagen" src="img/hacer-clic.png" alt="C#">
+					<div class="overlay"><p>C#</p></div>
+				</div>
+		</div>
+		</div>
+	</section>
+
+	<section id="Servicios">
+		<h3 class="MisServis">MI SERVICIOS</h3>
+		<div class="containerServicios">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4 class="Titulo">Diseño Web</h4>
+				<p class="texto">Diseño de sitios Web</p>
+			</div>
+		</div>
+		<div class="containerServicios">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-database"></i></span>
+				<h4 class="Titulo">Administrador de base de datos</h4>
+				<p class="texto">Administrar base de datos SQL</p>
+			</div>
+		</div>
+		<div class="containerServicios">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-file-code"></i></span>
+				<h4 class="Titulo">C#</h4>
+				<p class="texto">Desarollo de aplicaciones .Net y de escritorio con C#</p>
+			</div>
+		</div>
+	</section>
+
+	 <!-- SECCION FOOTER -->
+    <footer>
+        <p>Creado por Michael Rivas Todos los derechos reservados - 2024</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/michael.alvarenga.503?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/clay_1021?igsh=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+</body>
+</html>
