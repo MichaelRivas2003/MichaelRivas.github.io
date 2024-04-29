@@ -16,14 +16,21 @@ function seleccionar(link){
 
     // Obtenemos el destino del scroll
     var destinoId = link.getAttribute('href').substring(1);
-    var destino = document.getElementById(destinoId);
     
-    // Verificamos si el destino del scroll existe
-    if (destino) {
-        // Realizamos el efecto de scroll suave al elemento seleccionado
-        destino.scrollIntoView({ behavior: 'smooth' });
+    // Verificamos si el destino del scroll es "inicio"
+    if (destinoId === 'Inicio') {
+        // Realizamos un desplazamiento hacia arriba de la página
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        var destino = document.getElementById(destinoId);
+        // Verificamos si el destino del scroll existe
+        if (destino) {
+            // Realizamos el efecto de scroll suave al elemento seleccionado
+            destino.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 }
+
 
 
 
